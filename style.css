@@ -1,0 +1,343 @@
+@keyframes rocket {
+    0% { opacity: 0; }
+    100% { opacity: 100%; } }
+
+html {
+    scroll-behavior: smooth;
+    margin: 0 0;
+}
+
+body {
+    background-color: white;
+    margin: 0 0;
+    font-family: 'Jura', sans-serif;
+}
+
+span {
+    color: orangered;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 1s;
+    font-weight: bold;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#headbar {
+    background-color: white;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: -10px 0 0;
+}
+
+#logo {
+    width: 70%;
+    margin: 0 10px 0;
+}
+
+#logo span {
+    margin: -10px;
+}
+
+#menu p {
+    position: relative;
+    left: -3em;
+    top: 0.7em;
+    width: 100%;
+    font-weight: normal;
+}
+
+#wrapper-desc {
+    margin-top: 11vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#desc {
+    width: 40%;
+    margin-left: 6vw;
+    margin-top: 20vh;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#rocket {
+    animation: rocket 2s linear 1;
+    position: absolute;
+    left: 50%;
+    width: 40vw;
+    height: 70vh;
+}
+
+#back-circle {
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    width: 50%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(255,69,0,1) 0%, rgba(255,255,255,1) 50%);
+}
+
+#footer {
+    margin: 20vh 10vw 0;
+    display: flex;
+}
+
+.small-circle {
+    background: radial-gradient(circle, rgba(255,69,0,1) 0%, rgba(255,255,255,1) 60%);
+    border-radius: 50%;
+    width: 10%;
+    height: 20%;
+}
+
+#footer-circle {
+    z-index: 1;
+    position: absolute;
+    top: 80vh;
+    left: 5%;
+}
+
+#footer a {
+    z-index: 2;
+    font-size: 1.5rem;
+}
+
+#wrapper-functions {
+    margin: 10% 0 5% 5%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    padding-top: 10%;
+}
+
+#wrapper-functions #text {
+    width: 50%;
+}
+
+#text h2 {
+    margin-left: 5%;
+    font-size: 3rem;
+    line-height: 1rem;
+}
+
+#text h2:nth-child(2) {
+    font-size: 3rem;
+    color: orangered;
+    margin-left: 30%;
+}
+
+#wrapper-functions img {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 45%;
+    height: 60%;
+    box-shadow: -2em -2em orangered;
+}
+
+#text p{
+    width: 80%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: lighter;
+}
+
+#more {
+    margin-top: 15%;
+    display: flex;
+}
+
+#more .small-circle {
+    z-index: 1;
+    position: absolute;
+    margin: 0;
+}
+
+#more a {
+    z-index: 2;
+    font-size: 2rem;
+    margin-left: 6vw;
+    margin-top: 7vh;
+}
+
+#wrapper-example {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper-example h2 {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 50%;
+    font-size: 2.5rem;
+}
+
+#pink {
+    width: 90%;
+    height: 61.5vh;
+    background-color: pink;
+    padding-left: 10%;
+}
+
+#pink h2 {
+    color: white;
+    margin-left: 5%;
+    margin-top: 10vh;
+    width: 50%;
+    font-size: 2.5rem;
+}
+
+#features {
+    display: flex;
+    margin-left: 20%;
+}
+
+#features p {
+    margin-top: -2%;
+    padding-right: 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#all-project {
+    margin-top: 20vh;
+    display: flex;
+}
+
+#all-project-circle {
+    position: absolute;
+    z-index: 1;
+    background: radial-gradient(circle, rgba(255,69,0,1) 0%, rgba(255,192,203,1) 60%);
+    left: 18%;
+    top: 288%;
+}
+
+#all-project a{
+    z-index: 2;
+    margin-left: 15%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#shampoo{
+    width: 30vw;
+    height: 80vh;
+    position: absolute;
+    left: 60%;
+    top: 232.7%;
+}
+
+#wrapper-about {
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+#wrapper-about h2 {
+    margin-left: 5vw;
+    width: 50%;
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+#three-row {
+    display: flex;
+}
+
+#three-row div {
+    padding-left: 5vw;
+}
+
+#first img, #second img, #third img {
+    width: 90%;
+    height: 70%;
+}
+
+#wrapper-form {
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+#wrapper-form #left-column {
+    margin: 10% 0 15% 10%;
+    color: white;
+    width: 50%;
+}
+
+#left-column h2 {
+    font-size: 3.5rem;
+}
+
+#left-column p {
+    font-size: 2rem;
+}
+
+#left-column p:nth-child(1) {
+    margin-top: 10%;
+}
+
+#icons {
+    margin-top: 5%;
+}
+
+#icons img {
+    width: 40px;
+    height: 40px;
+    padding-right: 10%;
+}
+
+form {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 40%;
+    height: 20%;
+    background-color: black;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-size: 2rem;
+    margin: 2% auto;
+}
+input[type="text"] {
+    border: 0px solid white;
+    border-radius: 5%;
+    border-bottom: 1px solid white;
+}
+
+form p {
+    color: white;
+    font-size: 1.5rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+#circle-form .small-circle {
+    position: absolute;
+    top: 150%;
+    z-index: 1;
+}
+
